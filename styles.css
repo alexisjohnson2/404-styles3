@@ -1,10 +1,32 @@
 :root {
-    --bgcolor: EA7AF4;
+    --lt-accent : FF57BB
+    --accent : FF57BB
+    --base : 6EFAFB
+    --lt-primary : 0091AD
+    --primary : F7E8A4
+    --dk-primary : FFF4E4
+}
+* {
+    margin: 0;
+    padding: 0;
 }
 body {
-    background-color: var(--bgcolor);
+    background-color: var(--base);
+    line-height: 1.4;
 }
-h1 {
-    font-size: large;
-   
+nav, footer {
+    background-color: var(--accent) ;
+    color: var(--base);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    justify-content: space-around;
+}
+nav a {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
 }
